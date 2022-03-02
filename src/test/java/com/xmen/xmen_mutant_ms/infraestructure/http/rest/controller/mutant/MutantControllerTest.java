@@ -56,7 +56,8 @@ public class MutantControllerTest {
 
         ResponseEntity responseEntity = ResponseEntity.ok().body(responseDto);
 
-        RequestDna requestDna = RequestDna.builder().dna(dna).build();
+        RequestDna requestDna = new RequestDna();
+        requestDna.setDna(dna);
 
         Mockito.when(mutantController.createMutant(requestDna)).thenReturn(responseEntity);
 
@@ -99,7 +100,8 @@ public class MutantControllerTest {
 
         ResponseEntity responseEntity = ResponseEntity.status(403).body(responseDto);
 
-        RequestDna requestDna = RequestDna.builder().dna(dna).build();
+        RequestDna requestDna = new RequestDna();
+        requestDna.setDna(dna);
 
         Mockito.when(mutantController.createMutant(requestDna)).thenReturn(responseEntity);
 
