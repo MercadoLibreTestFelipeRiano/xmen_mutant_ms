@@ -2,9 +2,9 @@ server:
   port: 8080
 spring:
   datasource:
-    url: jdbc:mysql://${DB_HOSTNAME}:${DB_PORT}/${DB_DATABASE}
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
+    url: jdbc:mysql://xmen-mutant-db.czxzee1yluwl.us-east-1.rds.amazonaws.com:3306/xmen-mutant-db
+    username: admin
+    password: xmen-db-2022-password
     driver-class-name: com.mysql.cj.jdbc.NonRegisteringDriver
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect

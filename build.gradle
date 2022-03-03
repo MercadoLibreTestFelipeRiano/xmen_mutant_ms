@@ -2,6 +2,15 @@ plugins {
 	id 'org.springframework.boot' version '2.6.4'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id "org.sonarqube" version "3.3"
+}
+
+sonarqube {
+	properties {
+		property "sonar.projectKey", "MercadoLibreTestFelipeRiano_xmen_mutant_ms"
+		property "sonar.organization", "mercadolibretestfeliperiano"
+		property "sonar.host.url", "https://sonarcloud.io"
+	}
 }
 
 group = 'com.xmen'
@@ -33,10 +42,6 @@ dependencies {
 	implementation('io.springfox:springfox-swagger2:3.0.0')
 	implementation('io.springfox:springfox-swagger-ui:2.8.0')
 	implementation('io.springfox:springfox-boot-starter:3.0.0')
-
-//	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
-//	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.0.2'
-//	implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
 
 
 }
