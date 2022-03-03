@@ -13,5 +13,3 @@ http://ec2-34-204-47-229.compute-1.amazonaws.com:8080/swagger-ui.html
 ``` docker build -t xmen_mutant . ```
 ## Run image
 ```  docker run -it --rm --env-file ./env.list --name xmen_mutant -p 8080:8080 xmen_mutant ```
-##
-
